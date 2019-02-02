@@ -9,7 +9,7 @@
                     <el-input placeholder="请输入商品名" size="small" prefix-icon="el-icon-search"/>
                 </el-col>
                 <el-col :span="2" style="text-align: center;line-height: 35px">
-                    <img src="../static/images/noLoginhead.png" style="height: 100%;width: 100%"/>
+                    <img src="http://static.saiarea.com/images/shopping/noLoginhead.png" style="height: 100%;width: 100%"/>
                 </el-col>
             </el-row>
         </el-header>
@@ -96,7 +96,7 @@
                 <el-col :span="6" class="footerNavItem">
                     <el-row>
                         <el-col :span="24">
-                            <i class="el-icon-star-on" style="font-size: 27px"/>
+                            <img src="http://static.saiarea.com/images/shopping/noLoginhead.png" style="height: 27px;width: 27px"/>
                         </el-col>
                         <el-col :span="24" class="footerNavItemLabel">
                             我的
@@ -121,42 +121,42 @@ export  default {
                   goodsPrice:'10000000000',
                   goodsStart:4.3
               },{
-                  id:1,
+                  id:2,
                   goodsImg:'https://images-cn.ssl-images-amazon.com/images/I/516Al3DM1qL._AC_SX118_SY170_FMwebp_QL65_.jpg',
                   goodsName:' 周突破新日语能力考试N2(语法+听解+文字词汇)(套装共3册)',
                   goodsBrand:'拜亚动力',
                   goodsPrice:'10000000000',
                   goodsStart:4.5
               },{
-                  id:1,
+                  id:3,
                   goodsImg:'https://images-cn.ssl-images-amazon.com/images/I/51KE2JRJFEL._AC_SX354_SY510_FMwebp_QL65_.jpg',
                   goodsName:' 周突破新日语能力考试N2(语法+听解+文字词汇)(套装共3册)',
                   goodsBrand:'拜亚动力',
                   goodsPrice:'10000000000',
                   goodsStart:4.5
               },{
-                  id:1,
+                  id:4,
                   goodsImg:'https://images-cn.ssl-images-amazon.com/images/I/51IikZtqrGL._AC_SX354_SY510_FMwebp_QL65_.jpg',
                   goodsName:' 周突破新日语能力考试N2(语法+听解+文字词汇)(套装共3册)',
                   goodsBrand:'拜亚动力',
                   goodsPrice:'10000000000',
                   goodsStart:4.5
               },{
-                  id:1,
+                  id:5,
                   goodsImg:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544796959503&di=00737e33795fb80c68146c5788645280&imgtype=0&src=http%3A%2F%2Fauctions.c.yimg.jp%2Fimages.auctions.yahoo.co.jp%2Fimage%2Fdr000%2Fauc0311%2Fusers%2F8%2F7%2F0%2F0%2Fkunochikara-img1200x900-1510686097bhnp7k18296.jpg',
                   goodsName:' 周突破新日语能力考试N2(语法+听解+文字词汇)(套装共3册)',
                   goodsBrand:'拜亚动力',
                   goodsPrice:'10000000000',
                   goodsStart:4.5
               },{
-                  id:1,
+                  id:6,
                   goodsImg:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544796959503&di=00737e33795fb80c68146c5788645280&imgtype=0&src=http%3A%2F%2Fauctions.c.yimg.jp%2Fimages.auctions.yahoo.co.jp%2Fimage%2Fdr000%2Fauc0311%2Fusers%2F8%2F7%2F0%2F0%2Fkunochikara-img1200x900-1510686097bhnp7k18296.jpg',
                   goodsName:' 周突破新日语能力考试N2(语法+听解+文字词汇)(套装共3册)',
                   goodsBrand:'拜亚动力',
                   goodsPrice:'10000000000',
                   goodsStart:4.5
               },{
-                  id:1,
+                  id:7,
                   goodsImg:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544796959503&di=00737e33795fb80c68146c5788645280&imgtype=0&src=http%3A%2F%2Fauctions.c.yimg.jp%2Fimages.auctions.yahoo.co.jp%2Fimage%2Fdr000%2Fauc0311%2Fusers%2F8%2F7%2F0%2F0%2Fkunochikara-img1200x900-1510686097bhnp7k18296.jpg',
                   goodsName:' 周突破新日语能力考试N2(语法+听解+文字词汇)(套装共3册)',
                   goodsBrand:'拜亚动力',
