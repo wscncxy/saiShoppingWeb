@@ -9,7 +9,8 @@
                 <el-aside style="width: 10%;min-width: 80px;">
                     <el-row>
                         <el-col v-for="(kindsItem) in goodsKindsList" :key="'kindsItem'+kindsItem.id"
-                                :class="'goodsKindPageLeftItem ' + (kindsItem.id===1?'goodsKindPageLeftItemSelected':'')" >
+                                :class="'goodsKindPageLeftItem ' + (kindsItem.id===0?'goodsKindPageLeftItemSelected':'')"
+                            >
                             {{kindsItem.name}}
                         </el-col>
                     </el-row>
