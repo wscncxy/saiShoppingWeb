@@ -17,6 +17,9 @@ export default new VueRouter({
                         path: '/goods',
                         component: resolve => require(['../pages/goods/goodsList.vue'], resolve)
                     },{
+                        path: '/goodsKinds',
+                        component: resolve => require(['../pages/goods/goodsKinds.vue'], resolve)
+                    },{
                         path: '/goodsDetail',
                         component: resolve => require(['../pages/goods/goodsDetail.vue'], resolve)
                     }

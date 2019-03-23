@@ -99,7 +99,10 @@
 </template>
 
 <script>
+
+    import routes from '../router';
     let indexTopBannerInterval;
+    let indexTopNewsInterval;
     export default {
         name: 'index',
         data() {
@@ -108,42 +111,42 @@
                     {
                         title: "日本",
                         image: "http://static.saiarea.com/images/shopping/japan.jpg",
-                        url: "../japan.jpg"
+                        url: "/goods"
                     },
                     {
                         title: "德国",
                         image: "http://static.saiarea.com/images/shopping/deguo.jpg",
-                        url: ""
+                        url: "/good"
                     },
                     {
                         title: "法国",
                         image: "http://static.saiarea.com/images/shopping/faguo.jpeg",
-                        url: ""
+                        url: "/good"
                     },
                     {
                         title: "美国",
                         image: "http://static.saiarea.com/images/shopping/meiguo.jpg",
-                        url: ""
+                        url: "/good"
                     },
                     {
                         title: "领券",
                         image: "http://static.saiarea.com/images/shopping/youhuiquan.jpeg",
-                        url: ""
+                        url: "/good"
                     },
                     {
                         title: "百科",
                         image: "http://static.saiarea.com/images/shopping/baike.png",
-                        url: ""
+                        url: "/good"
                     },
                     {
                         title: "淘快递",
                         image: "http://static.saiarea.com/images/shopping/gongju.jpeg",
-                        url: ""
+                        url: "/good"
                     },
                     {
                         title: "更多",
                         image: "http://static.saiarea.com/images/shopping/gengduo.png",
-                        url: ""
+                        url: "/good"
                     }
                 ],
                 topBannerList: [
@@ -174,23 +177,29 @@
         },
         methods: {
             reBannerToAuto: function () {
-                console.log(this.$refs.indexTopBanner)
+                let _this = this
                 window.clearInterval(indexTopBannerInterval);
                 indexTopBannerInterval = window.setInterval(function () {
                     _this.$refs.indexTopBanner.next()
                 }, 3000);
+            },
+            toUrl: function (url) {
+                routes.push({path:url})
             }
         },
         created: function () {
-            console.log('dddddd');
             let _this = this
             indexTopBannerInterval = window.setInterval(function () {
                 _this.$refs.indexTopBanner.next()
             }, 3000);
 
-            window.setInterval(function () {
+            indexTopNewsInterval = window.setInterval(function () {
                 _this.$refs.indexTopNews.next()
             }, 2000);
+        },
+        destroyed: function(){
+            window.clearInterval(indexTopBannerInterval);
+            window.clearInterval(indexTopNewsInterval);
         }
     }
 

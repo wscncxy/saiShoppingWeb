@@ -30,12 +30,14 @@
                 </el-col>
                 <el-col :span="6" class="footerNavItem">
                     <el-row>
-                        <el-col :span="24">
-                            <i class="el-icon-tickets" style="font-size: 27px"/>
-                        </el-col>
-                        <el-col :span="24" class="footerNavItemLabel">
-                            分类
-                        </el-col>
+                        <div @click="tabMenuTo('/goodsKinds')">
+                            <el-col :span="24">
+                                <i class="el-icon-tickets" style="font-size: 27px"/>
+                            </el-col>
+                            <el-col :span="24" class="footerNavItemLabel">
+                                分类
+                            </el-col>
+                        </div>
                     </el-row>
                 </el-col>
                 <el-col :span="6" class="footerNavItem">
