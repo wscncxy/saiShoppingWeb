@@ -1,7 +1,6 @@
 const path = require('path');
 var webpack = require('webpack');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -9,16 +8,15 @@ module.exports = {
         publicPath: '/dist/',
         path: path.resolve(__dirname, '../dist')
     },
-    devServer: {
-        historyApiFallback: true,
-        overlay: true,
-        host: 'localhost'
-
-   },
     resolve: {
         alias: {
             'vue$': 'vue/dist/vue.esm.js'
         }
+    },
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
     },
     module: {
         rules: [
@@ -47,7 +45,6 @@ module.exports = {
     },
 
     plugins: [
-        new VueLoaderPlugin(),
-        new CleanWebpackPlugin()
+        new VueLoaderPlugin()
     ]
 };

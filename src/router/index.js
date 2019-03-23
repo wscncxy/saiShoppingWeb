@@ -8,7 +8,7 @@ export default new VueRouter({
             {
                 path: '/',
                 component: resolve => require(['../pages/main.vue'], resolve),
-                redirect:"/goodsDetail",
+                redirect:"/index",
                 children: [
                     {
                         path: '/index',
