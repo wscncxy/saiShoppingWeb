@@ -109,44 +109,44 @@
             return {
                 midNavList: [
                     {
-                        title: "日本",
+                        title: "本地超市",
                         image: "http://static.saiarea.com/images/shopping/japan.jpg",
                         url: "/goods"
                     },
                     {
-                        title: "德国",
+                        title: "日韩直邮",
                         image: "http://static.saiarea.com/images/shopping/deguo.jpg",
-                        url: "/good"
+                        url: "/goods"
                     },
                     {
-                        title: "法国",
+                        title: "欧美直邮",
                         image: "http://static.saiarea.com/images/shopping/faguo.jpeg",
-                        url: "/good"
+                        url: "/goods"
                     },
                     {
-                        title: "美国",
+                        title: "全球淘货",
                         image: "http://static.saiarea.com/images/shopping/meiguo.jpg",
-                        url: "/good"
+                        url: "/goods"
                     },
                     {
-                        title: "领券",
+                        title: "今日汇率",
                         image: "http://static.saiarea.com/images/shopping/youhuiquan.jpeg",
-                        url: "/good"
+                        url: "/goods"
                     },
                     {
-                        title: "百科",
+                        title: "知识百科",
                         image: "http://static.saiarea.com/images/shopping/baike.png",
-                        url: "/good"
+                        url: "/goods"
                     },
                     {
-                        title: "淘快递",
+                        title: "自助直邮",
                         image: "http://static.saiarea.com/images/shopping/gongju.jpeg",
-                        url: "/good"
+                        url: "/goods"
                     },
                     {
-                        title: "更多",
+                        title: "百宝箱",
                         image: "http://static.saiarea.com/images/shopping/gengduo.png",
-                        url: "/good"
+                        url: "/goods"
                     }
                 ],
                 topBannerList: [
@@ -239,10 +239,6 @@
     .footerNavItemLabel {
         font-size: 12px;
         vertical-align: bottom;
-    }
-
-    .el-carousel__indicator .el-carousel__button {
-        width: 10px;
     }
 
     .indexTopBanner img {

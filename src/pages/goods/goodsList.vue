@@ -26,12 +26,12 @@
                     <el-container>
                         <el-aside width="30%" height="100%">
                             <img :src="goodsItem.goodsImg"
-                                 class="itemImg"/>
+                                 class="itemImg" @click="toUrl('/goodsDetail')"/>
                         </el-aside>
                         <el-main style="text-align: left;padding-left:10px;padding-right: 5px">
                             <el-row>
                                 <el-col :span="24" style="font-size: 16px;font-weight: bolder">
-                                    {{goodsItem.goodsName}}
+                                    <div @click="toUrl('/goodsDetail')">{{goodsItem.goodsName}}</div>
                                 </el-col>
                                 <el-col :span="24" style="font-size: 12px;color:#555">
                                     {{goodsItem.goodsBrand}}
@@ -59,6 +59,8 @@
 </template>
 
 <script>
+
+    import routes from '../../router';
     export default {
         name: 'index',
         data() {
@@ -118,9 +120,13 @@
                 stars: 4.5
             }
         },
-        methods: {},
+        methods: {
+            toUrl: function (url) {
+                console.log('dddddd')
+                routes.push({path:url})
+            }
+        },
         created: function () {
-            console.log('dddddd')
         }
     }
 </script>
