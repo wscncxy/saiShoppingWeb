@@ -5,12 +5,17 @@
                 <el-col :span="24" style="max-height: 35%">
                     <div
                             @click="goBack()"
-                            style="position: absolute;width: 100%;color: red;z-index: 1000">返回</div>
+                            style="position: absolute;width: 30px;
+                            opacity:0.4;height:30px;z-index: 1000;border-radius: 50%;background: #C0C0C0">
+                        <div style="line-height: 35px">
+                            《
+                        </div>
+                    </div>
                     <el-carousel ref="indexTopBanner"
                                  :autoplay=false
                                  arrow="never" class="indexTopBanner">
                         <el-carousel-item v-for="goodsImage in goodsImageList" style="height: 100%">
-                            <img :src="goodsImage.url" style="width: 100%;height: "/>
+                            <img :src="goodsImage.url" style="width: 100%;"/>
                         </el-carousel-item>
                     </el-carousel>
                 </el-col>
@@ -175,8 +180,9 @@ export  default {
     .el-container {
         height: 100%;
         padding: 0px;
-        margin: 0px;
+        margin: 0px auto;
         width: 100%;
+        max-width: 1024px;
     }
 
     .el-main {
@@ -226,7 +232,7 @@ export  default {
         border-style: solid;
         border-width: 1px;
         color: #111;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .goodsInfoNav{

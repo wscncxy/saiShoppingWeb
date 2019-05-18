@@ -27,3 +27,5 @@ node_modules/
 /src/main/resources/application-local.yml
 !/@logback.root.path@/cmsystem-log.2017-11-12.log
 /@logback.root.path@/
+
+package-lock.json

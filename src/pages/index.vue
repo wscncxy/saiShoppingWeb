@@ -9,7 +9,7 @@
                 <el-carousel ref="indexTopBanner" height="150px"
                              :autoplay=false
                              arrow="never" class="indexTopBanner">
-                    <el-carousel-item v-for="banner in topBannerList">
+                    <el-carousel-item :key="'banner'+banner.id" v-for="banner in topBannerList">
                         <img :src="banner.image"/>
                     </el-carousel-item>
                 </el-carousel>
@@ -151,12 +151,15 @@
                 ],
                 topBannerList: [
                     {
+                        id:1,
                         image: "http://static.saiarea.com/images/shopping/banner1.jpg",
                         url: ""
                     }, {
+                        id:2,
                         image: "http://static.saiarea.com/images/shopping/banner2.jpg",
                         url: ""
                     }, {
+                        id:3,
                         image: "http://static.saiarea.com/images/shopping/banner3.jpg",
                         url: ""
                     }

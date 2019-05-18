@@ -28,7 +28,7 @@
                     <div class="baseSearchHeaderUserMenu">
                         在线客服
                     </div>
-                    <img slot="reference" src="http://static.saiarea.com/images/shopping/noLoginhead.png" style="height: 100%;width: 100%"/>
+                    <img slot="reference" src="http://static.saiarea.com/images/shopping/noLoginhead.png" style="height: 40px;"/>
                 </el-popover>
             </el-col>
             <el-col :span="22" style="padding-left: 5px; padding-right: 5px">

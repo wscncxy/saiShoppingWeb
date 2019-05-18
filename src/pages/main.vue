@@ -14,7 +14,7 @@
         <el-main>
             <router-view/>
         </el-main>
-        <el-footer class="main-footer" style="height: 50px;z-index: 10000">
+        <el-footer class="main-footer" style="height: 60px;z-index: 10000">
             <el-row class="footerNav">
                 <el-col :span="6" class="footerNavItem">
                     <el-row>
@@ -42,12 +42,14 @@
                 </el-col>
                 <el-col :span="6" class="footerNavItem">
                     <el-row>
-                        <el-col :span="24">
-                            <i class="el-icon-goods" style="font-size: 27px"/>
-                        </el-col>
-                        <el-col :span="24" class="footerNavItemLabel">
-                            购物车
-                        </el-col>
+                        <div @click="tabMenuTo('/cart')">
+                            <el-col :span="24">
+                                <i class="el-icon-goods" style="font-size: 27px"/>
+                            </el-col>
+                            <el-col :span="24" class="footerNavItemLabel">
+                                购物车
+                            </el-col>
+                        </div>
                     </el-row>
                 </el-col>
                 <el-col :span="6" class="footerNavItem">
@@ -89,7 +91,9 @@
     .el-container {
         height: 100%;
         padding: 0px;
-        margin: 0px;
+        margin: 0px auto;
+        width: 100%;
+        max-width: 1024px;
     }
 
     .el-header {

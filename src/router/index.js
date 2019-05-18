@@ -19,6 +19,9 @@ export default new VueRouter({
                     },{
                         path: '/goodsKinds',
                         component: resolve => require(['../pages/goods/goodsKinds.vue'], resolve)
+                    },{
+                        path: '/cart',
+                        component: resolve => require(['../pages/personal/cart.vue'], resolve)
                     }
                 ]
             },

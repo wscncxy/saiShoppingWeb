@@ -30,8 +30,8 @@
                             {{categorItem.name}}
                         </el-col>
                         <el-col v-for="(goodsType) in categorItem.goodsTypeList"
-                                :key="'categorItem'+categorItem.id"
-                                :id="'categorItem'+categorItem.id"
+                                :key="'goodsType-'+categorItem.id+'-'+goodsType.id"
+                                :id="'goodsType-'+categorItem.id+'-'+goodsType.id"
                                 :span="8"
                                 class="goodsTypeItem">
                             <div style="background: white;">
@@ -121,30 +121,37 @@
                         name: '水果',
                         goodsTypeList:[
                             {
+                                id:1,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             },
                             {
+                                id:2,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             },
                             {
+                                id:3,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             },
                             {
+                                id:4,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             },
                             {
+                                id:5,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             },
                             {
+                                id:6,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             },
                             {
+                                id:7,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             }
@@ -155,14 +162,17 @@
                         name: '水果',
                         goodsTypeList:[
                             {
+                                id:1,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             },
                             {
+                                id:2,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             },
                             {
+                                id:3,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             }
@@ -173,30 +183,37 @@
                         name: '水果',
                         goodsTypeList:[
                             {
+                                id:1,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             },
                             {
+                                id:2,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             },
                             {
+                                id:3,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             },
                             {
+                                id:4,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             },
                             {
+                                id:5,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             },
                             {
+                                id:6,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             },
                             {
+                                id:7,
                                 name: '热带水果',
                                 img:'http://static.saiarea.com/images/shopping/japan.jpg'
                             }
