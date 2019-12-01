@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config buildConfig/webpack.config.js",
+    "build": "webpack --config buildConfig/webpack.config.js --mode production",
     "debug": "webpack-dev-server  --open --hot --config buildConfig/webpack.dev.config.js --mode development",
     "clean": "webpack-dev-server clean --config buildConfig/webpack.dev.config.js"
   },
