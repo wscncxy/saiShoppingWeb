@@ -14,7 +14,7 @@
         <el-main>
             <router-view/>
         </el-main>
-        <el-footer class="main-footer" style="height: 60px;z-index: 10000">
+        <el-footer class="main-footer" style="height: 50px;z-index: 10000">
             <el-row class="footerNav">
                 <el-col :span="6" class="footerNavItem">
                     <el-row>
@@ -103,6 +103,7 @@
     .el-main {
         padding: 0px;
         height: 100%;
+        text-align:center;
     }
 
     .el-footer {

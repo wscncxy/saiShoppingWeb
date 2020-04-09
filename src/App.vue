@@ -4,6 +4,9 @@
     </div>
 </template>
 <style>
+    .el-container{
+        margin:0 auto;
+    }
     html{
         height: 100%;
     }
